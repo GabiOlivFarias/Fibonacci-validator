@@ -5,6 +5,9 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    minWidth: {
+      90: '360px',
+    },
     extend: {
       colors: {
         'primary': '#B3977D',
