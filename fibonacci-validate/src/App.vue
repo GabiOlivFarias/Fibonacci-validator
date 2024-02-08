@@ -1,5 +1,7 @@
 <template>
-  <h1 class="bg-orange-300 flex justify-center items-center ">
-    Teste Template
-  </h1>
+  <div class="m-10 border-2 border-solid border-tertiary p-7">
+    <h1 class= "flex justify-center items-center">
+      Sequência Fibonacci
+    </h1>
+  </div>
 </template>
