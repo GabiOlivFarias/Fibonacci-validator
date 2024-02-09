@@ -11,37 +11,39 @@
     <div v-if="resultMessage" class="result-container">
       <h3>{{ resultMessage }}</h3>
     </div>
-  </template>
+</template>
   
-  <script>
-  import ValidateNumberButton from '../buttons/ValidateNumberButton.vue'
+<script>
+    import ValidateNumberButton from '../buttons/ValidateNumberButton.vue'
   
-  export default {
+    export default {
     components: {
-      ValidateNumberButton,
+        ValidateNumberButton,
     },
     data() {
-      return {
+        return {
         resultMessage: '',
-      }
+        }
     },
     methods: {
-      validateNumber() {
+        validateNumber() {
         let number = parseInt(document.getElementById('number').value)
-  
-        this.resultMessage = isFibonacci(number)
-          ? 'É um número de Fibonacci!'
-          : 'Não é um número de Fibonacci!'
-      },
-    },
-  }
-  function isFibonacci(n) {
-    return isPerfectSquare(5 * n * n + 4) || isPerfectSquare(5 * n * n - 4)
-}
 
-function isPerfectSquare(x) {
-    let s = Math.sqrt(x)
-    return s * s === x
-}
+        this.resultMessage = isFibonacci(number)
+            ? 'É um número de Fibonacci!'
+            : 'Não é um número de Fibonacci!'
+        },
+    },
+    }
+    function isFibonacci(n) {
+    if (n <= 0) {
+        return false
+    }
+
+    const test1 = Math.sqrt(5 * n * n + 4)
+    const test2 = Math.sqrt(5 * n * n - 4)
+
+    return Number.isInteger(test1) || Number.isInteger(test2)
+    }
 </script>
   

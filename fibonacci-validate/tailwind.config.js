@@ -8,11 +8,15 @@ export default {
     minWidth: {
       90: '360px',
     },
+    minHeight: {
+      180: '720px',
+    },
     extend: {
       colors: {
-        'primary': '#B3977D',
-        'secundary': '#E6AA73',
-        'tertiary': '#381B00'
+        'primary': '#680000',
+        'secundary': '#8b0304',
+        'tertiary': '#b11116',
+        'quaternary': '#ff0000'
       },
       backgroundSize: {
         'size-200': '200% 200%',
@@ -20,8 +24,8 @@ export default {
         'size-60': '60% 60%',
       },
       backgroundColor: {
-        'dark-gray': '#4C4136',
-        'light-gray': '#807973',
+        'light-red': '#f9d2d2',
+        'medium-red': '#f75959',
       },
       fontSize: {
         h1: '64px',

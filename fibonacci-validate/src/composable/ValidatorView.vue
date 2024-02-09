@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import NumberInput from '../components/globals/input/NumberInput.vue'
+    import NumberInput from '../components/globals/input/NumberInput.vue'
 </script>

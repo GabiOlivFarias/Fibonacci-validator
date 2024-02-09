@@ -1,5 +1,5 @@
 <template>
-  <button class="text-h4 text-white bg-black">
+  <button class="text-h4 text-white bg-medium-red w-32 rounded-md">
     <p>Verificar</p>
   </button>
 </template>
