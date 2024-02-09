@@ -2,13 +2,14 @@
     <div class="flex flex-row p-2">
       <input
         id="number"
-        type="number"
+        type="text"
         placeholder="Digite um numero"
         class="size-12 w-56 cursor-text p-4 m-2 appearance-none border-2 border-solid border-primary"
+        @input="onInput"
       />
       <ValidateNumberButton @click="validateNumber" />
     </div>
-    <div v-if="resultMessage" class="result-container">
+    <div v-if="resultMessage" class="result-container font-medium text-2xl">
       <h3>{{ resultMessage }}</h3>
     </div>
 </template>
