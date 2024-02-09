@@ -5,11 +5,25 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
+    minWidth: {
+      90: '360px',
+    },
+    minHeight: {
+      180: '720px',
+    },
+    fontFamily: {
+      insaniburger: [
+        'Insaniburger-Bold',
+        'Insaniburger-Light',
+        'Insaniburger-Regular',
+      ],
+    },
     extend: {
       colors: {
-        'primary': '#B3977D',
-        'secundary': '#E6AA73',
-        'tertiary': '#381B00'
+        'primary': '#680000',
+        'secundary': '#8b0304',
+        'tertiary': '#b11116',
+        'quaternary': '#ff0000'
       },
       backgroundSize: {
         'size-200': '200% 200%',
@@ -17,11 +31,16 @@ export default {
         'size-60': '60% 60%',
       },
       backgroundColor: {
-        'dark-gray': '#4C4136',
-        'light-gray': '#807973',
+        'light-red': '#f9d2d2',
+        'medium-red': '#f75959',
+      },
+      dropShadow: {
+        'red-1': '0px 5px 10px rgba(247,89,89,1)',
       },
       fontSize: {
-        h1: '64px',
+        button: '20px',
+        'subtitle-1': '20px',
+        h1: '128px',
         h2: '48px',
         h3: '32px',
         h4: '24px',
