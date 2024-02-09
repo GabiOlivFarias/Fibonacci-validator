@@ -1,6 +1,8 @@
 <template>
     <div>
-        <p> Digite um número abaixo: </p>
+        <p class="flex justify-start pl-4 font-regular text-2xl"> 
+            Digite um número abaixo: 
+        </p>
         <NumberInput />
     </div>
 </template>

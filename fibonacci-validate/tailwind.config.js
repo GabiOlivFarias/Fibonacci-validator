@@ -11,6 +11,13 @@ export default {
     minHeight: {
       180: '720px',
     },
+    fontFamily: {
+      insaniburger: [
+        'Insaniburger-Bold',
+        'Insaniburger-Light',
+        'Insaniburger-Regular',
+      ],
+    },
     extend: {
       colors: {
         'primary': '#680000',
@@ -27,8 +34,13 @@ export default {
         'light-red': '#f9d2d2',
         'medium-red': '#f75959',
       },
+      dropShadow: {
+        'red-1': '0px 5px 10px rgba(247,89,89,1)',
+      },
       fontSize: {
-        h1: '64px',
+        button: '20px',
+        'subtitle-1': '20px',
+        h1: '128px',
         h2: '48px',
         h3: '32px',
         h4: '24px',
