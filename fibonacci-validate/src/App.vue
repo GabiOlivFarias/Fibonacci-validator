@@ -3,10 +3,10 @@
     <img src="../public/images/logo.png" class="absolute top-0 right-0 w-1/6 px-4 mt-4 mr-4" />
     <div class="pb-24">
       <h1 class="flex justify-center font-bold text-6xl">
-        Sequência Fibonacci
+        {{ $t('tittle') }}
       </h1>
       <p class="flex justify-center font-medium text-3xl"> 
-        Vamos verificar se o número pertence à sequência Fibonacci
+        {{ $t('subtittle') }}
       </p>
     </div>
     <ValidatorView />

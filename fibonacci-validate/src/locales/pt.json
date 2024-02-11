@@ -1,0 +1,17 @@
+{
+  "tittle": "Sequência Fibonacci",
+  "subtittle": "Vamos verificar se o número pertence à sequência Fibonacci",
+  "view": {
+    "instruction": "Digite um número abaixo: "
+  },
+  "buttons": {
+    "send": "Verificar"
+  },
+  "placeholders": {
+    "type_number": "Digite um numero"
+  },
+  "messages": {
+    "is_fibonacci": "É um número de Fibonacci!",
+    "not_fibonacci": "Não é um número de Fibonacci!"
+  }
+}

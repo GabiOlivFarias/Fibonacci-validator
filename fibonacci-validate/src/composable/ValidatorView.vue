@@ -1,7 +1,7 @@
 <template>
     <div>
         <p class="flex justify-start pl-4 font-regular text-2xl"> 
-            Digite um número abaixo: 
+            {{ $t('view.instruction') }}
         </p>
         <NumberInput />
     </div>

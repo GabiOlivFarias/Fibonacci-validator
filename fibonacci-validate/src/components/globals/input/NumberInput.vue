@@ -3,7 +3,7 @@
       <input
         id="number"
         type="text"
-        placeholder="Digite um numero"
+        :placeholder="$t('placeholders.type_number')"
         class="size-12 w-56 cursor-text p-4 m-2 appearance-none border-2 border-solid border-primary"
         @input="onInput"
       />
