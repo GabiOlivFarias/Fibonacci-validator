@@ -1,16 +1,18 @@
 <template>
-    <div class="flex flex-row p-2">
-      <input
-        id="number"
-        type="text"
-        :placeholder="$t('placeholders.type_number')"
-        class="size-12 w-56 cursor-text p-4 m-2 appearance-none border-2 border-solid border-primary"
-        @input="onInput"
-      />
-      <ValidateNumberButton @click="validateNumber" />
-    </div>
-    <div v-if="resultMessage" class="result-container font-medium text-2xl">
-      <h3>{{ resultMessage }}</h3>
+    <div>
+      <div class="md:flex md:flex-row md:p-2">
+        <input
+          id="number"
+          type="text"
+          :placeholder="$t('placeholders.type_number')"
+          class="md:size-12 md:w-56 cursor-text p-4 m-2 appearance-none border-2 border-solid border-primary"
+          @input="onInput"
+        />
+        <ValidateNumberButton @click="validateNumber" />
+      </div>
+      <div v-if="resultMessage" class="result-container font-medium text-2xl">
+        <h3>{{ resultMessage }}</h3>
+      </div>
     </div>
 </template>
   
